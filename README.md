@@ -4,5 +4,5 @@
 
 ![sample](sample.png)
 
-### Licence
-**[MIT](./LICENCE)**
+### License
+**[MIT](./LICENSE)**
