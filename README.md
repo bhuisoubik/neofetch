@@ -5,4 +5,4 @@
 ![sample](sample.png)
 
 ### Licence
-**[MIT](LICENCE)**
+**[MIT](./LICENCE)**
