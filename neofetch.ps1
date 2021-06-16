@@ -84,7 +84,7 @@ function memory {
     $committed_mem = [math]::Floor(((Get-WmiObject  win32_operatingsystem | Select-Object @{L='commit';E={($_.totalvirtualmemorysize - $_.freevirtualmemory)*1KB/0.001GB}}).Commit))
     $available_mem = [math]::Floor((((Get-CIMInstance Win32_OperatingSystem).FreePhysicalMemory)/1000))
     $used_mem = $committed_mem - $available_mem
-    $mem = "${used_mem} MB / $committed_mem MB" # TODO
+    $mem = "${used_mem} MB / $committed_mem MB"
     Write-Host "Memory " -NoNewline -ForegroundColor Cyan
     Write-Host ": ${mem}"
 }
